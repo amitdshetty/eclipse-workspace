@@ -1,0 +1,74 @@
+
+Attributes Available
+--------------------------
+A
+F
+G
+C
+Type a decision attribute name and Press ENTER...
+F
+
+Loop 1:
+--------------------------
+[A1] = [x2, x3, x4, x6]
+[A2] = [x1, x5]
+[G1] = [x2, x4]
+[G2] = [x3, x5]
+[G3] = [x1, x6]
+[C1] = [x2, x3]
+[C2] = [x1, x4, x5, x6]
+
+Certain Rules:
+[G2] -> F2[Support:-2, Confidence:-100.0%]
+[C1] -> F2[Support:-2, Confidence:-100.0%]
+
+Possible Rules:
+[A2] -> F1[Support:-1, Confidence:-50.0%]
+[A2] -> F2[Support:-1, Confidence:-50.0%]
+[G1] -> F1[Support:-1, Confidence:-50.0%]
+[G1] -> F2[Support:-1, Confidence:-50.0%]
+[G3] -> F1[Support:-1, Confidence:-50.0%]
+[G3] -> F2[Support:-1, Confidence:-50.0%]
+[C2] -> F1[Support:-2, Confidence:-50.0%]
+[C2] -> F2[Support:-2, Confidence:-50.0%]
+[A1] -> F1[Support:-1, Confidence:-25.0%]
+[A1] -> F2[Support:-3, Confidence:-75.0%]
+
+Loop 2:
+--------------------------
+[A2, C2] = [x1, x5]
+[G1, C2] = [x4]
+[A1, G1] = [x2, x4]
+[A2, G1] = []
+[G3, C2] = [x1, x6]
+[A1, G3] = [x6]
+[A2, G3] = [x1]
+[A1, C2] = [x4, x6]
+[A2, G1] is already marked!
+[A2, G1] is already marked!
+
+Certain Rules:
+[G1, C2] -> F1[Support:-1, Confidence:-100.0%]
+[G2] -> F2[Support:-2, Confidence:-100.0%]
+[A1, G3] -> F2[Support:-1, Confidence:-100.0%]
+[C1] -> F2[Support:-2, Confidence:-100.0%]
+[A2, G3] -> F1[Support:-1, Confidence:-100.0%]
+
+Possible Rules:
+[A1, C2] -> F1[Support:-1, Confidence:-50.0%]
+[A1, C2] -> F2[Support:-1, Confidence:-50.0%]
+[G3, C2] -> F1[Support:-1, Confidence:-50.0%]
+[G3, C2] -> F2[Support:-1, Confidence:-50.0%]
+[A1, G1] -> F1[Support:-1, Confidence:-50.0%]
+[A1, G1] -> F2[Support:-1, Confidence:-50.0%]
+[A2, C2] -> F1[Support:-1, Confidence:-50.0%]
+[A2, C2] -> F2[Support:-1, Confidence:-50.0%]
+
+Loop 3:
+--------------------------
+[A1, G1, C2] = [x4]
+[A1, G3, C2] = [x6]
+[A2, G3, C2] = [x1]
+[A1, G1, C2] is already marked!
+[A1, G3, C2] is already marked!
+[A2, G3, C2] is already marked!
